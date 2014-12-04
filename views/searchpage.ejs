@@ -1,0 +1,19 @@
+<% layout( 'layout' ) -%>
+
+
+<h1 id="page-title">Search To Do List items</h1>
+
+<div id="list">
+    <form action="/searchpage" method="post" accept-charset="utf-8">
+        <div class="item-new">
+            <input class="input" type="text" name="content1" autofocus="autofocus" />
+        </div>
+    </form>
+
+    <% data1.forEach( function ( data1 ){ %>
+    <div class="item">
+        <%= data1.content %>
+    </div>
+    <% }); %>
+</div>
+
