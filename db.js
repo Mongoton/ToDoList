@@ -8,4 +8,5 @@ var Todo = new Schema({
 });
 
 mongoose.model( 'Todo', Todo );
-mongoose.connect( 'mongodb://localhost/express-todo' );
+//mongoose.connect( 'mongodb://localhost/express-todo' );
+mongoose.connect( 'mongodb://heroku_app32231064:hmiem6skl6pugs0sou2lbmm24q@ds061200.mongolab.com:61200/heroku_app32231064');
