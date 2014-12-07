@@ -41,7 +41,7 @@ exports.index = function ( req, res, next ){
       if( err ) return next( err );
 
       res.render( 'index', {
-          title : 'Express Todo Example',
+          title : 'Notes',
           todos : todos
       });
     });
